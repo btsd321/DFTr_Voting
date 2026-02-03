@@ -1,0 +1,67 @@
+name: dftr_voting
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+
+dependencies:
+  # Python 版本
+  - python=3.8
+  
+  # CUDA 和 cuDNN (根据你的 GPU 调整)
+  - cudatoolkit=11.3
+  - cudnn=8.2.1
+  
+  # PyTorch 生态
+  - pytorch=1.12.1
+  - torchvision=0.13.1
+  - torchaudio=0.12.1
+  
+  # 科学计算
+  - numpy=1.22.3
+  - scipy=1.8.1
+  - scikit-learn=1.1.1
+  
+  # 计算机视觉
+  - opencv=4.6.0
+  - pillow=9.2.0
+  
+  # 数据处理
+  - pyyaml=6.0
+  - h5py=3.7.0
+  
+  # 可视化
+  - matplotlib=3.5.2
+  - seaborn=0.11.2
+  
+  # 开发工具
+  - cython=0.29.30
+  - tqdm=4.64.0
+  
+  # Jupyter (可选)
+  - jupyter=1.0.0
+  - ipython=8.4.0
+  
+  # pip 安装的包
+  - pip
+  - pip:
+    # 3D 点云处理
+    - open3d==0.16.0
+    - plyfile==0.7.4
+    - trimesh==3.12.9
+    
+    # 深度学习工具
+    - tensorboardX==2.5.1
+    - einops==0.4.1
+    
+    # 工具库
+    - termcolor==1.1.0
+    - gorilla-core==0.2.7.8
+    - imageio==2.19.3
+    
+    # NVIDIA Apex (需要源码编译，下面是替代方案)
+    # 如果无法安装 apex，可以注释掉，使用 PyTorch 原生的 AMP
+    # 安装命令: pip install -v --disable-pip-version-check --no-cache-dir \
+    #           --global-option="--cpp_ext" --global-option="--cuda_ext" \
+    #           git+https://github.com/NVIDIA/apex.git

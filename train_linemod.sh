@@ -3,6 +3,9 @@
 # Usage: ./train_linemod.sh [object_name]
 # Example: ./train_linemod.sh ape
 
+# 激活虚拟环境
+source .venv/bin/activate
+
 # Default object (if not specified)
 OBJ=${1:-ape}
 

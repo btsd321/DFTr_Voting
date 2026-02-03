@@ -2,3 +2,5 @@ Linemod_preprocessed.zip
 .vscode/
 .venv/
 datasets/
+MP6D/
+train_log/

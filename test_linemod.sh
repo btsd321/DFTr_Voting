@@ -3,6 +3,9 @@
 # Usage: ./test_linemod.sh [object_name] [checkpoint_path]
 # Example: ./test_linemod.sh ape train_log/linemod/checkpoints/ape_best.pth.tar
 
+# 激活虚拟环境
+source .venv/bin/activate
+
 OBJ=${1:-ape}
 CHECKPOINT=${2:-"train_log/linemod/checkpoints/${OBJ}_best.pth.tar"}
 
