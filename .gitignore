@@ -1,2 +1,4 @@
 Linemod_preprocessed.zip
 .vscode/
+.venv/
+datasets/
